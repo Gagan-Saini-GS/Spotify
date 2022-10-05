@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Roboto Mono", monospace;
+  color: #eeeeee;
+}
+
+/******************************************************* Tag styles ******************************************************/
+
+body {
+  background-image: url("images/backgroundIMG.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* z-index: 1; */
+}
+
+input {
+  outline: none;
+  color: #000;
+}
+
+i {
+  font-size: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+/******************************************************* Classes styles ******************************************************/
+
+/* Navbar */
+
+.navbar-container {
+  display: flex;
+  font-size: 2rem;
+  padding-left: 5rem;
+  background-color: #91091e;
+  /* background-color: #06283d; */
+  /* background-color: #256d85; */
+  color: #eeeeee;
+  align-items: center;
+}
+
+.nav-item {
+  padding: 0.75rem 1rem;
+}
+
+.nav-item:hover {
+  color: #da723c;
+}
+
+.navbar-container input {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 2px solid #787a91;
+  padding: 4px;
+  border-left: none;
+  color: black;
+}
+
+.input-container {
+  position: absolute;
+  right: 9rem;
+  top: 5px;
+}
+
+.input-container i {
+  position: relative;
+  top: 3px;
+  background-color: white;
+  color: #787a91;
+  border: 2px solid #787a91;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 3px;
+  border-right: none;
+}
+
+.user-icon {
+  position: absolute;
+  /* top: 5px; */
+  right: 6rem;
+}
+
+/* Main-container */
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Music box */
+
+.music-box {
+  width: 40%;
+  margin-left: 5rem;
+  padding-left: 1rem;
+  color: #eeeeee;
+}
+
+.music-box img {
+  width: 100%;
+  height: 325px;
+  /* border: 2px solid #eeeeee; */
+  border-radius: 10px;
+  margin-top: 75px;
+  opacity: 0.5;
+}
+
+.playing-song-details {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+  margin: 0.75rem 0;
+  font-size: 2rem;
+}
+
+.song-timeline {
+  width: 90%;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.controls i {
+  font-size: 2.5rem;
+  padding: 2rem 1rem;
+}
+
+.volume-controler {
+  width: 80%;
+  margin: 1rem 4rem;
+}
+
+/* Library Box */
+
+.library-box {
+  width: 40%;
+  margin-right: 5rem;
+  padding-right: 1rem;
+}
+
+.library-box h1 {
+  margin-top: 75px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.songList {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.songList::-webkit-scrollbar {
+  display: none;
+}
+
+.song {
+  display: flex;
+  margin-bottom: 20px;
+  padding-left: 50px;
+}
+
+.songImage {
+  width: 13%;
+  margin-right: 3%;
+}
+
+.song-details {
+  font-size: 1rem;
+}
+
+.addSongBtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.addSongBtn button {
+  width: 15%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: 2px solid #eeeeee;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 4rem;
+  background-color: black;
+}
+
+/* Add Song Container */
+
+.add-song-container {
+  padding: 0px 6rem;
+  margin-top: 100px;
+}
+
+.add-song-container h1 {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #eeeeee;
+  margin-bottom: 50px;
+}
+
+.song-item {
+  width: 150%;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.song-item input {
+  width: 96%;
+  padding: 5px;
+  border: 3px solid #91091e;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.addBtn {
+  margin-top: 2.5rem;
+  width: 151%;
+  padding: 5px;
+  color: #eeeeee;
+  font-size: 1.5rem;
+  border: 3px solid #91091e;
+  border-radius: 5px;
+  background-color: #91091e;
+}
+
+/* About Container */
+
+.about-container {
+  margin-top: 100px;
+  padding-right: 6rem;
+}
+
+.about-container img {
+  /* border: 3px solid #eeeeee; */
+  border-radius: 10px;
+}
+
+.details {
+  font-style: italic;
+}
+
+/* Time pass */
+input[type="range"] {
+  background: transparent;
+  height: 39px;
+  -webkit-appearance: none;
+  margin: 0px 4rem;
+  width: 80%;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px #a6a6a6;
+  background: #ff96ab;
+  background: #91091e;
+  border-radius: 4px;
+  border: 2px solid #f27b7f;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 2px #a6a6a6;
+  border: 2px solid #f27b7f;
+  border: 2px solid #91091e;
+  height: 30px;
+  width: 30px;
+  border-radius: 0px;
+  background: #ff96ab;
+  background: #91091e;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -11px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #ff96ab;
+
+  background: #91091e;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px #a6a6a6;
+  background: #ff96ab;
+  background: #91091e;
+  border-radius: 4px;
+  border: 2px solid #f27b7f;
+  border: 2px solid #91091e;
+}
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 1px 1px 2px #a6a6a6;
+  border: 2px solid #f27b7f;
+  border: 2px solid #91091e;
+  height: 30px;
+  width: 30px;
+  border-radius: 0px;
+  background: #ff96ab;
+  background: #91091e;
+  cursor: pointer;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #ff96ab;
+  background: #91091e;
+  border: 2px solid #f27b7f;
+  border: 2px solid #91091e;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px #a6a6a6;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #ff96ab;
+  background: #91091e;
+  border: 2px solid #f27b7f;
+  border: 2px solid #91091e;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px #a6a6a6;
+}
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 1px 1px 2px #a6a6a6;
+  border: 2px solid #f27b7f;
+  border: 2px solid #91091e;
+  height: 30px;
+  width: 30px;
+  border-radius: 0px;
+  background: #ff96ab;
+  background: #91091e;
+  cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #ff96ab;
+  background: #91091e;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #ff96ab;
+  background: #91091e;
+}
